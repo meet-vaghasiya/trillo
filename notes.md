@@ -5,4 +5,8 @@
 
 2. if sass is compile all partials. than make foldere struture like this. https://stackoverflow.com/questions/24203318/sass-watch-not-recompiling
 3. diff between sass variable and scss variable?
-4. svg file from sprite.svg only work in server.
+4. svg file from sprite only work in server.
+5. give `image to display:block. it will remove thin line.`
+6. **svg act as inline-bock.** so it will have line-height. so even if we do align-items:center it not ecnter excalty. which difficult to even see because only 2-3px gap. to solve this issue give `line-height:0` or set `parent to display:flex.`
+7. use `currentColor` property to color border-bottom or normal border. it will take current text color automaticallly and if you change in hover border color also change automatically. `border-bottom: 1px solid currentColor;`
+8. if you increse padding than will create gap between border and innerText.
