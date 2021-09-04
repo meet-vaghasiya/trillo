@@ -1,0 +1,1 @@
+1.  use iconmoon for using svg==> https://icomoon.io/. may libray but use encrypto+.

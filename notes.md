@@ -4,4 +4,5 @@
    - so always use font-size in root for convert default rem.
 
 2. if sass is compile all partials. than make foldere struture like this. https://stackoverflow.com/questions/24203318/sass-watch-not-recompiling
-3. 
+3. diff between sass variable and scss variable?
+4. svg file from sprite.svg only work in server.

@@ -28,6 +28,9 @@ Grey dark 3: #999
     --color-grey-dark-1: #333;
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
+
+    //box-shadow
+    --shadow-black-03: 0 2rem 5rem rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -54,4 +57,5 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    color: var(--color-grey-dark-2);
 }
