@@ -11,4 +11,4 @@
 7. use `currentColor` property to color border-bottom or normal border. it will take current text color automaticallly and if you change in hover border color also change automatically. `border-bottom: 1px solid currentColor;`
 8. if you increse padding than will create gap between border and innerText.
 9. if you want to change color of background image than use background mask property.but it only work in modeern browser.
-10. 
+10. if you want html entity direclty using css ( by ::before,::after ) sudo element. than diff iso code reuqired in content property.
