@@ -15,3 +15,5 @@
 11. if order property use to rearrange order of flex-item. so in responsive if you want second flex item to take 100% width and move in another row, than use `flex-basis:0 0 100%;` and in parent `flex-warp:wrap.` and in second item `order:1` . 
 12. some propery is not supprt in other browser. so we require two condition if browser supprt than do this , or do another . for this sass has @support method please see that. in this project we use for mask- property  in description list.
 13.  in build of sass to css, sass include lot's of webkit prefix, for if browser not support , so it's better to use sass in all project. 
+14.  in reponsive we genrally need to change flex-direction. so also change margin-right to margin-bottom and remove margin from some side if we required.
+15.  for responsive reduce font-size, margin,gap and padding , this will solve over most of the problem.
