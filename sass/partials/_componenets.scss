@@ -15,6 +15,13 @@ searech
     flex: 0 0 40%;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-grey-light-2);
+
+    @media screen and (max-width: $bp-smallest) {
+        // flex-direction: column;
+        order: 1;
+        flex: 0 0 100%;
+    }
     &__input {
         background-color: var(--color-grey-light-2);
         font-family: inherit;
@@ -109,13 +116,25 @@ NAVIGATON
 .side-nav {
     font-size: 1.4rem;
     list-style: none;
-    margin-top: 3.5rem;
+    // margin-top: 3.5rem;
+
+    @media screen and (max-width: $bp-medium) {
+        // flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__item {
         position: relative;
+        @media screen and (max-width: $bp-medium) {
+            flex: 1;
+        }
 
         &:not(:last-child) {
             margin-bottom: 0.5rem;
+            @media screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -151,12 +170,22 @@ NAVIGATON
 
         display: flex;
         align-items: center;
+        @media screen and (max-width: $bp-medium) {
+            justify-content: center;
+        }
+        @media screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem 0.5rem;
+        }
     }
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+        @media screen and (max-width: $bp-small) {
+            margin-right: 0;
+        }
     }
 }
 
@@ -185,6 +214,11 @@ NAVIGATON
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+        }
     }
     &__icon-star,
     &__icon-location {
@@ -298,14 +332,19 @@ NAVIGATON
         width: 1rem;
 
         //for modern browser
-        background-color: var(--color-primary);
-        -webkit-mask-image: url("../img/chevron-thin-right.svg");
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        margin-right: 0.7rem;
+
         //;
-        // background-image: url("../img/chevron-thin-right.svg");
-        // background-size: cover;
+        background-image: url("../img/chevron-thin-right.svg");
+        background-size: cover;
+
+        @supports (-webkit-mask-image: url()) or (-webkit-mask-image: url()) {
+            background-color: var(--color-primary);
+            -webkit-mask-image: url("../img/chevron-thin-right.svg");
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            margin-right: 0.7rem;
+            background-image: none;
+        }
     }
 }
 
@@ -346,6 +385,9 @@ NAVIGATON
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: $bp-small) {
+        width: 100%;
+    }
 
     &__text {
         margin-bottom: 2rem;

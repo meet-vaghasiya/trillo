@@ -11,4 +11,7 @@
 7. use `currentColor` property to color border-bottom or normal border. it will take current text color automaticallly and if you change in hover border color also change automatically. `border-bottom: 1px solid currentColor;`
 8. if you increse padding than will create gap between border and innerText.
 9. if you want to change color of background image than use background mask property.but it only work in modeern browser.
-10. if you want html entity direclty using css ( by ::before,::after ) sudo element. than diff iso code reuqired in content property.
+10. if you want html entity direclty using css ( by ::before,::after ) sudo element. than diff iso code reuqired in content property.  
+11. if order property use to rearrange order of flex-item. so in responsive if you want second flex item to take 100% width and move in another row, than use `flex-basis:0 0 100%;` and in parent `flex-warp:wrap.` and in second item `order:1` . 
+12. some propery is not supprt in other browser. so we require two condition if browser supprt than do this , or do another . for this sass has @support method please see that. in this project we use for mask- property  in description list.
+13.  in build of sass to css, sass include lot's of webkit prefix, for if browser not support , so it's better to use sass in all project. 
